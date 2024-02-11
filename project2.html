@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>House of Health</title>
+    <link rel="stylesheet" href="project2.css">
+</head>
+<body>
+    <div>
+        <h1>HOH Receptionist Login</h1>
+        <div class="center-box">
+            <form id="loginForm">
+                <div class="flex-item">
+                    <label for="firstName">First Name:</label>
+                    <input id="firstName" name="firstName" >
+                    <span class="required-text">required</span>
+                </div>
+                <div class="flex-item">
+                    <label for="lastName">Last Name:</label>
+                    <input id="lastName" name="lastName">
+                    <span class="required-text">required</span>
+                </div>
+                <div class="flex-item">
+                    <label for="phoneNumber">Phone Number:</label>
+                    <input id="phoneNumber" name="phoneNumber">
+                    <span class="required-text">required</span>
+                </div>
+                <div class="flex-item">
+                    <label for="email">Email Address:</label>
+                    <input id="email" name="email">
+                    <span id="emailRequired" class="required-text" style="display: none">required</span>
+                </div>
+                <div class="flex-item">
+                    <label for="password">Password:</label>
+                    <input id="password" name="password">
+                    <span class="required-text">required</span>
+                </div>
+                <div class="flex-item">
+                    <label for="receptionId">Reception ID:</label>
+                    <input id="receptionId" name="receptionId">
+                    <span class="required-text">required</span>
+                </div>
+                <div class="flex-item">
+                    <label for="emailConfirmation">Email Confirmation:</label>
+                    <input id="emailConfirmation" name="emailConfirmation" type="checkbox">
+                </div>
+                <div class="error-message" id="errorMessages"></div>
+                <div class="transaction">
+                    <label for="transactionType">Transaction Type:</label>
+                    <select id="transactionType" name="transactionType">
+                        <option value="search">Search Account</option>
+                        <option value="appointment">Book Appointment</option>
+                        <option value="cancelAppointment">Cancel Appointment</option>
+                        <option value="requestProcedure">Request Procedure</option>
+                        <option value="cancelProcedure">Cancel Procedure</option>
+                        <option value="updateInfo">Update Patient Information</option>
+                        <option value="createAccount">Create New Patient Account</option>
+                    </select>
+                    <span class="required-text">required</span>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
